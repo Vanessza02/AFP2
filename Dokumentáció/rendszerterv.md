@@ -61,13 +61,14 @@ Az alkalmazás  Webes felülettel rendelkezik.
   
 
 ## 6. Fizikai környezet
-   
+   Megvásárolt komponensei nincsenek, ennek köszönhetően egy böngésző használatával  már használható is.
 
 ### Hardver topológia
-   
+   Az alkalmazás böngészőből érhető el, így bármilyen eszközről elérhető, amin lehet használni böngészőt.
 
 ### Fejlesztő eszközök
 	
+   A webalkalmazást Visual Studio Coda-ban írjuk, amit laravel segítségével keszítjük el. 
 
 ## 8. Architekturális terv
 
