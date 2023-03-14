@@ -1,6 +1,8 @@
 # Rendszerterv
 ## 1. A rendszer célja
 
+A rendszer célja,hogy scrum meetingeket létre tudjunk hozni, amikről értesítéseket fogunk kapni, valamint tudjuk értékelni a sprintet, amiről majd diagramm is fog készülni, ami megkönnyítheti a programozók munkáját. 
+Az alkalmazás  Webes felülettel rendelkezik. 
   
 
 ## 2. Projektterv
