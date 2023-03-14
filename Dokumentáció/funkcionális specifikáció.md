@@ -1,6 +1,6 @@
 # Funkcionális specifikáció
 ## 1. Jelenlegi helyzet leírása
-
+Felmerült az igény egy nyilvántartó és eseménykezelő alkalmazás iránt, hogy a programozók könnyebben átláthassák a teendőiket és teljesítményüket a scrum meetingek során. Így kifejlesztjük ezt az webes felületet, hogy segítsük a munkájukat.
 
 
 ## 2. Vágyállomrendszer leírása
