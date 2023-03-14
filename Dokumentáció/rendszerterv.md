@@ -6,14 +6,14 @@
 ## 2. Projektterv
 
 ### 2.1 Projektszerepkörök, felelőségek:
-   * Scrum masters: 
-   * Product owner: 
-   * Üzleti szereplő:
+   * Scrum masters: Hadobás Dávid
+   * Product owner: Hadobás Dávid
+   * Üzleti szereplő:Hadobás Dávid
      
 ### 2.2 Projektmunkások és felelőségek:
-   * Frontend:
-   * Backend:
-   * Tesztelés:
+   * Frontend:Jánosik Vanessza, Aranyi Patrik, Anka Bálint Kristóf
+   * Backend:Jánosik Vanessza, Aranyi Patrik, Anka Bálint Kristóf
+   * Tesztelés:Jánosik Vanessza, Aranyi Patrik, Anka Bálint Kristóf
      
 ### 2.3 Ütemterv:
 
