@@ -55,7 +55,7 @@ Az alkalmazás  Webes felülettel rendelkezik.
 	
 
 ## 5. Funkcionális terv
-  
+  Az alkalmazás a rendszerszereplők közül két felhasználótípust különböztet meg az admint és az alapfelhasználót. Az admin beléphet minden más szerepkörbe. Az adminok tudják létrehozni a scrum meetingeket. És ők tudják a felhasználók teljesítményét értékelni. A felhasználók meg tudják nézni, milyen meetingjeik lesznek, láthatják egy diagrammon, hogy hogyan teljesítettek a sprint során. Valamint a meetingekhez tudnak megjegyzéseket hozzáfűzni. A felhasználó meg tudja tekinteni az adatait, amit szerkeszteni is tud.
 
 ### 5.1 Rendszerszereplők
   
