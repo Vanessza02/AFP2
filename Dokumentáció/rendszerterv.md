@@ -20,7 +20,7 @@ Az alkalmazás Webes felülettel rendelkezik.
 ### 2.3 Ütemterv:
 
  |Funkció | Feladat | Prioritás | Becslés (nap) | Aktuális becslés (nap) | Eltelt idő (nap) | Becsült idő (nap) |
- |-------------------------|----------------------------------------|-----------|---------------|------------------------|------------------|---------------------|
+ ||----------------------------------------|-----------|---------------|------------------------|------------------|---------------------|
  |Követelmény specifikáció |Megírás | 1 | 1 | 1 | 1 | 1 | 
  |Funkcionális specifikáció|Megírás | 1 | 1 | 1 | 1 | 1 |
  |Rendszerterv |Megírás | 1 | 1 | 1 | 1 | 1 |
@@ -123,5 +123,6 @@ A karbantartási terve az alábbiakat tartalmazza:
 * Megfigyelni a rendszer teljesítményét, és szükség esetén optimalizálni a működést
 * Rendszeres karbantartásokat végezni, beleértve a víruskeresést, a tűzfal és biztonsági beállítások ellenőrzését
 * Az ügyfelekkel való kapcsolattartás, figyelni a visszajelzéseket és javítani a felmerülő problémákat.
+
 A fenti karbantartási tervek segítenek biztosítani, hogy az alkalmazás folyamatosan hatékonyan működjön, és minimalizálja a leállások vagy hibás működések előfordulását.
 
