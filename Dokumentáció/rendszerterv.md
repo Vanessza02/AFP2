@@ -64,13 +64,12 @@ Az alkalmazás Webes felülettel rendelkezik.
 
 | Id | Megnevezés| Leírás |
 | :---: | --- | --- |
-| 1 | Nemfunkcionális követelmény | Leírás |
-| 2 | Felhasználói felület | Az alkalmazás felhasználói felülete felhasználóbarát, intuitív és könnyen kezelhető legyen. |
-| 3 | Teljesítmény | Az alkalmazásnak gyorsan kell reagálnia a felhasználói kérésekre, és az adatbázis műveleteknek gyorsan kell lefutniuk. |
-| 4 | Biztonság | Az alkalmazásnak biztonságosnak kell lennie az adatvédelem és az adatbiztonság szempontjából. A felhasználók csak azokat az adatokat láthatják, amelyekre jogosultak. |
-| 5 | Skálázhatóság | Az alkalmazásnak skálázhatónak kell lennie, hogy az adatbázis méretének növekedésekor is hatékonyan működjön. |
-| 6 | Megfelelőség | Az alkalmazásnak meg kell felelnie a vonatkozó jogszabályoknak és előírásoknak, például az adatvédelmi törvénynek és az internetes biztonsági előírásoknak. |
-| 7 | Megbízhatóság | Az alkalmazásnak megbízhatónak kell lennie, és minimálisra kell csökkentenie a leállásokat vagy a hibás működést. |
+| 1 | Felhasználói felület | Az alkalmazás felhasználói felülete felhasználóbarát, intuitív és könnyen kezelhető legyen. |
+| 2 | Teljesítmény | Az alkalmazásnak gyorsan kell reagálnia a felhasználói kérésekre, és az adatbázis műveleteknek gyorsan kell lefutniuk. |
+| 3 | Biztonság | Az alkalmazásnak biztonságosnak kell lennie az adatvédelem és az adatbiztonság szempontjából. A felhasználók csak azokat az adatokat láthatják, amelyekre jogosultak. |
+| 4 | Skálázhatóság | Az alkalmazásnak skálázhatónak kell lennie, hogy az adatbázis méretének növekedésekor is hatékonyan működjön. |
+| 5 | Megfelelőség | Az alkalmazásnak meg kell felelnie a vonatkozó jogszabályoknak és előírásoknak, például az adatvédelmi törvénynek és az internetes biztonsági előírásoknak. |
+| 6 | Megbízhatóság | Az alkalmazásnak megbízhatónak kell lennie, és minimálisra kell csökkentenie a leállásokat vagy a hibás működést. |
 
 ### Támogatott eszközök
 VS Code
