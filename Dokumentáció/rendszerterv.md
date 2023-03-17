@@ -26,7 +26,7 @@ Az alkalmazás  Webes felülettel rendelkezik.
    |Rendszerterv             |Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |
    |Program                  |Képernyőtervek elkészítése              |         2 |             1 |                      1 |                1 |                   1 |
    |Program                  |Prototípus elkészítése                  |         3 |             8 |                      8 |                8 |                   8 |
-   |Program                  |Alapfunkciók elkészítése                |         3 |             8 |                      8 |                8 |                   8 |
+   |Program                  |Alapfunkciók elkészítése                |         4 |             9 |                      9 |                9 |                   9 |
    |Program                  |Tesztelés                               |         4 |             2 |                      2 |                2 |                   2 |
 
 ### 2.4 Mérföldkövek:
