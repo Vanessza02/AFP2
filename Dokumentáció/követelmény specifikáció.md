@@ -8,11 +8,11 @@ Felmerült az igény egy nyilvántartó és eseménykezelő alkalmazás iránt, 
 
 ## 3. Vágyálomrendszer
 
-
+Egy nyilvántartó és eseménykezelő alkalmazás lehetővé teszi az egyének számára, hogy feljegyezzék és kövessék azokat az eseményeket és feladatokat, amelyek segítik őket céljaik elérésében, és amelyek fontosak az életükben. Az alkalmazás a felhasználók számára releváns eseményeket és feladatokat ajánljon, és támogassa őket a motiváció és a teljesítmény fenntartásában.
 
 ## 4. Jelenlegi üzleti folyamatok modellje
 
-
+Ez a modell általában tartalmazza az adatgyűjtés és adatfeldolgozás folyamatát, az események és feladatok kezelését, a felhasználói élményt és az ügyfélszolgálati folyamatokat. Az alkalmazás hatékonyságának növelése érdekében a modell lehetőséget biztosít a folyamatok optimalizálására, a munkafolyamatok automatizálására és az adatok analizálására, hogy javítsák a döntéshozatalt és az ügyfélélményt.
 
 ## 5. Igényelt üzleti folyamatok modellje
 ![Igényelt üzleti folyamatok modellje](https://github.com/Vanessza02/AFP2/blob/main/Dokument%C3%A1ci%C3%B3/%C3%9Czleti%20folyamatok%20modellje/modell.png)
