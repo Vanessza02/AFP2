@@ -78,7 +78,8 @@ Az alkalmazás  Webes felülettel rendelkezik.
 Webesfelületre készül, php nyelven laravel keretrendszerrel fog elkészülni Visual Studi Code programban. Ezeket a technológiákat amennyire lehet külön fájlokba írjuk, és így csatoljuk egymáshoz, hogy jobban átláthatóbb legyen a program, könnyebben tudjunk változtatni a program kódján, valamint az egyszerűbb bővítés érdekében.
 
 ## 12. Telepítési terv
-
+Fizikai telepítési terv: Nincs
+Szoftver telepítési terv: Nincs, bármilyen böngészőből el tudjuk érni.
 
 ## 11. Tesztterv
 
