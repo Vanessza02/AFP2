@@ -49,6 +49,13 @@ Az alkalmazás használható admin és felhasználhatói jogokkal is. Az admin b
 
    | Id | Modul | Név | Leírás |
    | :---: | --- | --- | --- |   
+   | K1 | Weboldal |Nyilvántartó és Eseménykezelő felület | A weboldal  egy nyilvántartó és eseménykezelő felület a felhasználók részére |
+   | K2 | Funkció | Regisztráció  | Regisztrálás a weboldalra |
+   | K3 | Funkció | Bejelentkezés| Bejelentkezés a weboldalra |
+   | K4 | Funkció | Scrum meeting  | Scrum meetingek létrehozása |
+   | K5 | Funkció | Sprint értékelése |Sprintek kiértékelése |
+   | K6 | Funkció | Naptár felület |A felhasználó át tudja tekinteni a meetingjeit |
+   | K7 | Funkció | Diagram felület |A teljesitmények nyomonkövetése|
 
 ### Nemfunkcionális követelmények
 
