@@ -12,8 +12,7 @@ Felmerült az igény egy nyilvántartó és eseménykezelő alkalmazás iránt, 
 
 
 ## 4. Igényelt üzleti folyamatok modellje
-
-
+![Igényelt üzleti folyamatok modellje](https://github.com/Vanessza02/AFP2/blob/main/Dokument%C3%A1ci%C3%B3/%C3%9Czleti%20folyamatok%20modellje/modell.png)
 
 ## 5. Követelménylista
 
