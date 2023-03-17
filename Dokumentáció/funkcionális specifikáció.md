@@ -18,7 +18,13 @@ Felmerült az igény egy nyilvántartó és eseménykezelő alkalmazás iránt, 
 
 | Id | Modul | Név | Leírás |
 | :---: | --- | --- | --- |
-
+| K1 | Weboldal |Nyilvántartó és Eseménykezelő felület | A weboldal  egy nyilvántartó és eseménykezelő felület a felhasználók részére |
+| K2 | Funkció | Regisztráció  | Regisztrálás a weboldalra |
+| K3 | Funkció | Bejelentkezés| Bejelentkezés a weboldalra |
+| K4 | Funkció | Scrum meeting  | Scrum meetingek létrehozása |
+| K5 | Funkció | Sprint értékelése |Sprintek kiértékelése |
+| K6 | Funkció | Naptár felület |A felhasználó át tudja tekinteni a meetingjeit |
+| K7 | Funkció | Diagram felület |A teljesitmények nyomonkövetése|
 
 ## 6. Használati esetek
 Az alkalmazás használható admin és felhasználhatói jogokkal is. Az admin beléphet minden más szerepkörbe, hogy az hibamentes működését ellenőrizze. A feladata, hogy a rendszer problémamentesen működjön. Az adminok tudják létrehozni a scrum meetingeket. És ők tudják a felhasználók teljesítményét értékelni. A felhasználók meg tudják nézni, milyen meetingjeik lesznek, láthatják egy diagrammon, hogy hogyan teljesítettek a sprint során. Valamint a meetingekhez tudnak megjegyzéseket hozzáfűzni.
