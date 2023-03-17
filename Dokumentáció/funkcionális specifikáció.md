@@ -54,6 +54,9 @@ Az alkalmazás használható admin és felhasználhatói jogokkal is. Az admin b
 
    | Id | Megnevezés| Leírás |
    | :---: | --- | --- |
+   | K1 | Egyszerű, könnyen átlátható felület (Design) | Felhasználók számára könnyen kezelhető felület. |
+   | K2 | Sebesség | Weboldal gyorsan fut. |
+   | K3 | Megbízhatóság |Hiba nélkül végrehajtja a meghatározott funkciókat .|
 
 
 ## 11 Fogalomszótár
