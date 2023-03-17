@@ -20,7 +20,7 @@ Az alkalmazás Webes felülettel rendelkezik.
 ### 2.3 Ütemterv:
 
  |Funkció | Feladat | Prioritás | Becslés (nap) | Aktuális becslés (nap) | Eltelt idő (nap) | Becsült idő (nap) |
- |----------------------------------------|-----------|---------------|------------------------|------------------|---------------------|
+ | --- | --- | --- | --- | --- | --- |
  |Követelmény specifikáció |Megírás | 1 | 1 | 1 | 1 | 1 | 
  |Funkcionális specifikáció|Megírás | 1 | 1 | 1 | 1 | 1 |
  |Rendszerterv |Megírás | 1 | 1 | 1 | 1 | 1 |
