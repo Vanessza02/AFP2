@@ -30,4 +30,7 @@ Felmerült az igény egy nyilvántartó és eseménykezelő alkalmazás iránt, 
 | K7 | Funkció | Diagram felület |A teljesitmények nyomonkövetése|
 
 ## 7. Fogalomtár
-
+Weboldal:Az Interneten közzétett dokumentumokat megjelenítő úgynevezett böngészők (browser) által egyszerre megjelenített adattartalom.
+Sprint(futam):Egy előre megbeszélt hosszúságú fejlesztési időszak .
+Scrum Meeting:A találkozó fő célja a meglátások megvitatása, a munkára való reflektálás és a projekt előrehaladásának megosztása.
+Reszponzív felület:Igazodik a képernyőhöz a felület mérete, azaz több eszközön is probléma nélkül üzemelhet.
