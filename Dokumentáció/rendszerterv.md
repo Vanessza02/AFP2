@@ -71,9 +71,8 @@ Az alkalmazás  Webes felülettel rendelkezik.
    A webalkalmazást Visual Studio Coda-ban írjuk, amit laravel segítségével keszítjük el. 
 
 ## 8. Architekturális terv
-
+   A program php laravel webes keretrendszert használ. A rendszernek sqlite adatbázisa van. A program elérhető bármilyen böngészőből, agy bármilyen eszközön, ahol használni tudunk egy böngészőt el tudjuk érni az oldalt. 
    
-
 ## 10. Implementációs terv
 
 ## 12. Telepítési terv
