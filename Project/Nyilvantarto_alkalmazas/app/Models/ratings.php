@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class ratings extends Model
 {
     use HasFactory;
+    protected $fillable=[
+        'Worker ID',
+        'Rater ID',
+        'Rate',
+        'Reason',
+    ];
 }
