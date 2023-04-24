@@ -1,4 +1,4 @@
-@extends('layouts.auth')
+te@extends('layouts.auth')
 
 @section('content')
 <form action="{{ route('login.user') }}" method="POST">
@@ -39,7 +39,7 @@
             
         </div>
         <div class="card-footer">
-            <a class="py-2 d-none d-md-inline-block" href="signup">Regisztráció</a>
+            <a class="py-2 d-none d-md-inline-block" href="register">Regisztráció</a>
         </div>
     </div>
     </form>
