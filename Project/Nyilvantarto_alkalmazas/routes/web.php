@@ -15,8 +15,11 @@ use App\Http\Controllers;
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('welcome');
 });
 
 Route::get('/login', [Controllers\LoginController::class, 'index']);
 Route::post('/login', [Controllers\LoginController::class, 'store'])->name('login.user');
+
+Route::get('/register', [Controllers\RegisterController::class, 'index']);
+Route::post('/register', [Controllers\RegisterController::class, 'store'])->name('register.create');
