@@ -39,7 +39,7 @@ Ebben a dokumentumban lesz felsorolva az elvégzett tesztek elvárásai és ered
 Az Alfa tesztelés során a vizsgált elemek között volt ami nem megfelelően működött, ez a későbbiek során javításra szorul.
 
 
-Teszteléseket végezte: 
+Teszteléseket végezte: Anka Bálint Kristóf
 
 Operációs rendszer: Windows
 Megjelenités:Böngésző
@@ -50,10 +50,10 @@ Ebben a dokumentumban lesz felsorolva az elvégzett tesztek elvárásai és ered
 
 | Vizsgálat | Tesztelés időpontja | Elvárás | Eredmény | Hibák |
 | :---: | --- | --- | --- | --- |
-| | | |  |  |
-|  |  |  |  |  |
-| |  |  |  |  |
-| |  |  |  |  |
-| |  |  |  |  |
+| Regisztráció | 2023.04.24 | Sikeres a regisztráció  | Sikeres volt a regisztráció |Nincs hiba |
+| Bejelentkezés | 2023.04.24 | Sikeres bejelentkezés | Átnavigál a dashboard-ra | Nem létezik még a dashboard |
+| Regisztraciós oldal megjelenitése | 2023.04.24 | Regisztrációs oldal megfelelően megjelenjen | Regisztrációs oldal megfelelően müködik| Nincs hiba |
+| Bejelentkezesi oldal megjelnitése| 2023.04.24 | Bejelentkezesi oldal megfelelően megjelenjen| Bejelentkezesi oldal megfelelően müködik| Nincs hiba |
+| Fő oldal megjelenik | 2023.04.24 | Fő oldal megfelelően megjelenjen | Fő oldal megfelelően müködik | Nincs hiba |
 
 Az Alfa tesztelés során a vizsgált elemek között volt ami nem megfelelően működött, ez a későbbiek során javításra szorul.
