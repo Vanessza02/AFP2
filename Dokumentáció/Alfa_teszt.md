@@ -35,6 +35,7 @@ Ebben a dokumentumban lesz felsorolva az elvégzett tesztek elvárásai és ered
 | Regisztráció | 2023.04.24. | Sikeres a regisztráció  | Sikeres volt a regisztráció | Nem volt hiba |
 | Bejelentkezés | 2023.04.24. | Sikeres bejelentkezés | Átnavigál a dashboard-ra | Nem létezik még a dashboard |
 | Űrlap helyes kitöltésénél jelzett üzenet | 2023.04.24. | Sikeres kitöltésnél megjelenő sikerességet jelző üzenet| Sikerességet jelző üzenet megjelenik | Nem volt hiba |
+
 Az Alfa tesztelés során a vizsgált elemek között volt ami nem megfelelően működött, ez a későbbiek során javításra szorul.
 
 
