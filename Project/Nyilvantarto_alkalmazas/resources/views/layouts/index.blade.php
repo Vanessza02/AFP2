@@ -144,20 +144,20 @@
                     <!-- Left Menu Start -->
                     <ul class="metismenu" id="side-menu">
                         <li class="menu-title">Menu</li>
-                        <li>
-                            <a href="calendar.html" class="waves-effect"><i class="icon-graph"></i><span> Diagram felület </span></a>
+                         <li>
+                            <a href="{{ route('topic.show', 'dashboard') }}" class="waves-effect"><i class="icon-graph"></i><span> Diagram felület </span></a>
                         </li>
                         <li>
-                            <a href="calendar.html" class="waves-effect"><i class="icon-paper-sheet"></i><span> Profil </span></a>
+                            <a href="{{ route('topic.show', 'profile') }}" class="waves-effect"><i class="icon-paper-sheet"></i><span> Profil </span></a>
                         </li>
                         <li>
-                            <a href="calendar.html" class="waves-effect"><i class="icon-calendar"></i><span> Naptár </span></a>
+                            <a href="{{ route('topic.show', 'calendar') }}" class="waves-effect"><i class="icon-calendar"></i><span> Naptár </span></a>
                         </li>
                         <li>
-                            <a href="calendar.html" class="waves-effect"><i class="icon-todolist-check"></i><span> Értesítések </span></a>
+                            <a href="{{ route('topic.show', 'ratings') }}" class="waves-effect"><i class="icon-todolist-check"></i><span> Értesítések </span></a>
                         </li>
                         <li>
-                            <a href="calendar.html" class="waves-effect"><i class="icon-pencil-ruler"></i><span> Csapatok </span></a>
+                            <a href="{{ route('topic.show', 'groups') }}" class="waves-effect"><i class="icon-pencil-ruler"></i><span> Csapatok </span></a>
                         </li>
 
                 </div>
