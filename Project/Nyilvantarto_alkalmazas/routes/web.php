@@ -23,3 +23,5 @@ Route::post('/login', [Controllers\LoginController::class, 'store'])->name('logi
 
 Route::get('/register', [Controllers\RegisterController::class, 'index']);
 Route::post('/register', [Controllers\RegisterController::class, 'store'])->name('register.create');
+
+Route::get('/{theme}', [Controllers\DashboardController::class, 'show'])->name('topic.show');
