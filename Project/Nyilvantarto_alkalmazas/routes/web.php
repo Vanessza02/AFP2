@@ -28,3 +28,4 @@ Route::get('/{theme}', [Controllers\DashboardController::class, 'show'])->name('
 
 Route::post('/groups', [Controllers\TeamController::class, 'store'])->name('team.create');
 Route::get('/groups/teampage', [Controllers\TeamController::class, 'index']);
+Route::get('/logout', [Controllers\Auth\SessionController::class, 'destroy'])->name('logout');
