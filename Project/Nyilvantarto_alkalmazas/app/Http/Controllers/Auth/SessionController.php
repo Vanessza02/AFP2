@@ -21,6 +21,16 @@ class SessionController extends Controller
                 'email' => __('auth.failed'),
             ]);
         }
+        
+        public function destroy(Request $request)
+    {
+        Auth::logout();
+
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect()->route('home');
+    }
 
         $request->session()->regenerate();
 
