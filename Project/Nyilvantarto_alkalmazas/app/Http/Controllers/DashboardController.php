@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Team;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 
 class DashboardController extends Controller
@@ -16,30 +17,38 @@ class DashboardController extends Controller
 
         if($value == 'Diagram')
         {
-            return view('Dashboard.dashboard');
+            $userAvatar = Auth::user();
+
+            return view('Dashboard.dashboard', compact('userAvatar'));
         }
         elseif($value == 'Profil')
         {
-            return view('Dashboard.leader_user');
+            $userAvatar = Auth::user();
+
+            return view('Dashboard.leader_user', compact('userAvatar'));
         }
         elseif($value == 'Értékelés')
         {
-            return view('Dashboard.értesítések');
+            $userAvatar = Auth::user();
+            return view('Dashboard.értesítések', compact('userAvatar'));
         }
         elseif($value == 'Naptár')
         {
-            return view('Dashboard.naptás');
+            $userAvatar = Auth::user();
+            return view('Dashboard.naptás', compact('userAvatar'));
         }
         elseif($value == 'Csapatok')
         {
-            return view('Dashboard.csapat');
+            $userAvatar = Auth::user();
+            return view('Dashboard.csapat', compact('userAvatar'));
         }
         elseif($value == 'Hozzáadás')
         {
+            $userAvatar = Auth::user();
             $user = User::all();
             $user_id = auth()->id();
             $team = Team::where('user_id', '=', $user_id)->get();
-            return view('Dashboard.Team.team', compact('team', 'user'));
+            return view('Dashboard.Team.team', compact('team', 'user', 'userAvatar'));
         }
     }
 }

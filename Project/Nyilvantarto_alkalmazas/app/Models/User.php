@@ -43,4 +43,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    public function getAvatarAttribute()
+    {
+        $gravatar_hash = md5($this->email);
+        return "https://www.gravatar.com/avatar/{$gravatar_hash}?d=robohash"; 
+    }
 }
