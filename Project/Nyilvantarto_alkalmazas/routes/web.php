@@ -25,3 +25,6 @@ Route::get('/register', [Controllers\Auth\RegisterController::class, 'index']);
 Route::post('/register', [Controllers\Auth\RegisterController::class, 'store'])->name('register.create');
 
 Route::get('/{theme}', [Controllers\DashboardController::class, 'show'])->name('topic.show')->middleware('auth');
+
+Route::post('/groups', [Controllers\TeamController::class, 'store'])->name('team.create');
+Route::get('/groups/teampage', [Controllers\TeamController::class, 'index']);
