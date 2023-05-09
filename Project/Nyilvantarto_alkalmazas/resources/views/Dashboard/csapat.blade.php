@@ -61,7 +61,7 @@
                                 </div>
                                 <div class="card-footer">
                                     <a>Ha már benne vagy egy csapatban!</a>
-                                    <a class="py-2 d-none d-md-inline-block" href="groups/teampage">Kattints Ide!</a>
+                                    <a class="py-2 d-none d-md-inline-block" href="{{ route ('topic.show', 'addMember')}}">Kattints Ide!</a>
                                 </div>
                             </div>
                         </form>         
@@ -69,6 +69,4 @@
                 </div>
             </div>
             <!-- content -->
-
 @endsection
-
