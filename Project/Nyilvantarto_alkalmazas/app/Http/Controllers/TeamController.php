@@ -43,8 +43,29 @@ class TeamController extends Controller
         }
     }
 
-    public function index(){
-        return view('Dashboard.Team.team');
-    }
+    public function addMember(Request $request){
+        $request->validate([
+            'name' => 'required',
+            'nickname' => 'required',
+        ]);
 
+        $team = $request->name;
+        $name = $request->nickname;
+
+        $teamMember = new TeamMember;
+        $teamMember->team_id = Team::where('name', '=', $team)->value('id');
+        $teamMember->user_id = User::where('nickname' ,'=' , $name)->value('id');
+        $teamMember->role = "Tag";
+        $res = $teamMember->save();
+
+        if($res)
+        {
+            return back()->with('success','Sikeresen hozzáadtad a felhasználót!');
+        }
+        else
+        {
+            return back()->with('fail', 'Valami nincs rendben!');
+        }
+
+    }
 }

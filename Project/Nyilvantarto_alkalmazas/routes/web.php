@@ -24,8 +24,11 @@ Route::post('/login', [Controllers\Auth\SessionController::class, 'store'])->nam
 Route::get('/register', [Controllers\Auth\RegisterController::class, 'index']);
 Route::post('/register', [Controllers\Auth\RegisterController::class, 'store'])->name('register.create');
 
+Route::get('/logout', [Controllers\Auth\SessionController::class, 'destroy'])->name('logout');
+
 Route::get('/{theme}', [Controllers\DashboardController::class, 'show'])->name('topic.show')->middleware('auth');
 
 Route::post('/groups', [Controllers\TeamController::class, 'store'])->name('team.create');
-Route::get('/groups/teampage', [Controllers\TeamController::class, 'index']);
-Route::get('/logout', [Controllers\Auth\SessionController::class, 'destroy'])->name('logout');
+Route::post('/addMember', [Controllers\TeamController::class, 'addMember'])->name('add.member');
+
+
