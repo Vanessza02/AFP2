@@ -16,12 +16,12 @@ use App\Http\Controllers;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
-Route::get('/login', [Controllers\LoginController::class, 'index']);
-Route::post('/login', [Controllers\LoginController::class, 'store'])->name('login.user');
+Route::get('/login', [Controllers\Auth\SessionController::class, 'index']);
+Route::post('/login', [Controllers\Auth\SessionController::class, 'store'])->name('login.user');
 
-Route::get('/register', [Controllers\RegisterController::class, 'index']);
-Route::post('/register', [Controllers\RegisterController::class, 'store'])->name('register.create');
+Route::get('/register', [Controllers\Auth\RegisterController::class, 'index']);
+Route::post('/register', [Controllers\Auth\RegisterController::class, 'store'])->name('register.create');
 
-Route::get('/{theme}', [Controllers\DashboardController::class, 'show'])->name('topic.show');
+Route::get('/{theme}', [Controllers\DashboardController::class, 'show'])->name('topic.show')->middleware('auth');

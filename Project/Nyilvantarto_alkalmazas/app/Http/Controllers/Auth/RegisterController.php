@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
 use App\Models\User;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Hash;
 
@@ -40,5 +42,8 @@ class RegisterController extends Controller
         {
             return back()->with('fail', 'Valami nincs rendben!');
         }
+
+        Auth::login($user);
+        return redirect()->intended('/login');
     }
 }
