@@ -31,4 +31,6 @@ Route::get('/{theme}', [Controllers\DashboardController::class, 'show'])->name('
 Route::post('/groups', [Controllers\TeamController::class, 'store'])->name('team.create');
 Route::post('/addMember', [Controllers\TeamController::class, 'addMember'])->name('add.member');
 
+Route::post('/ratings', [Controllers\RatingController::class, 'rating'])->name('ratingChoice');
+Route::post('/ratingTheMember', [Controllers\RatingController::class, 'store'])->name('rating');
 

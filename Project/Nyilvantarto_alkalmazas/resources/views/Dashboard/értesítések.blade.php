@@ -8,146 +8,101 @@
                     <div class="page-title-box">
                         <div class="row align-items-center">
                             <div class="col-sm-6">
-                                <h4 class="page-title">Értesítések</h4>
+                                <h4 class="page-title">Értékelés</h4>
                             </div>
                         </div>
                         <!-- end row -->
                     </div>
                     <!-- end page-title -->
 
-                    <div class="row">
-
-                    <p>Kiscica</p>
-
-                    </div>
-                    <!-- end row -->
-
-                    <!-- START ROW -->
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="card m-b-30">
+            <!-- START NEW ROW -->
+            <div class="row">
+                <div class="col-xl-12">
+                <form action="{{ route('ratingChoice') }}" method="POST">
+                            @if(Session::has('success'))
+                                <div class="alert alert-success">{{Session::get('success')}}</div>
+                            @endif
+                            @if(Session::has('fail'))
+                            <div class="alert alert-danger">{{Session::get('fail')}}</div>
+                            @endif
+                            @csrf
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="display-5"> {{__('Csapat Kiválasztása')}} </h3>
+                                </div>
                                 <div class="card-body">
-                                    <h4 class="mt-0 header-title mb-4">Active Deals</h4>
-                                    <div class="table-responsive">
-                                        <table class="table table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">Name</th>
-                                                    <th scope="col">Status</th>
-                                                    <th scope="col">Amount</th>
-                                                    <th scope="col">Contact</th>
-                                                    <th scope="col">Location</th>
-                                                    <th scope="col" colspan="2">Date</th>
-
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Jassa</td>
-                                                    <td><span class="badge badge-success">Delivered</span></td>
-                                                    <td>$9,420,000</td>
-                                                    <td>
-                                                        <div>
-                                                            <img src="assets/images/user-2.jpg" alt="" class="thumb-md rounded-circle mr-2"> Jassa
-                                                        </div>
-                                                    </td>
-                                                    <td>Ludhiana</td>
-                                                    <td>15/1/2021</td>
-
-                                                    <td>
-                                                        <div>
-                                                            <a href="#" class="btn btn-primary btn-sm">Edit</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jassa</td>
-                                                    <td><span class="badge badge-warning">Pending</span></td>
-                                                    <td>$3,120,000</td>
-                                                    <td>
-                                                        <div>
-                                                            <img src="assets/images/user-3.jpg" alt="" class="thumb-md rounded-circle mr-2"> Jassa
-                                                        </div>
-                                                    </td>
-                                                    <td>Ludhiana</td>
-                                                    <td>16/1/2021</td>
-
-                                                    <td>
-                                                        <div>
-                                                            <a href="#" class="btn btn-primary btn-sm">Edit</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jassa</td>
-                                                    <td><span class="badge badge-success">Delivered</span></td>
-                                                    <td>$6,360,000</td>
-                                                    <td>
-                                                        <div>
-                                                            <img src="assets/images/user-4.jpg" alt="" class="thumb-md rounded-circle mr-2"> Jassa
-                                                        </div>
-                                                    </td>
-                                                    <td>Ludhiana</td>
-                                                    <td>17/1/2021</td>
-
-                                                    <td>
-                                                        <div>
-                                                            <a href="#" class="btn btn-primary btn-sm">Edit</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jassa</td>
-                                                    <td><span class="badge badge-danger">Cancel</span></td>
-                                                    <td>$5,200,000</td>
-                                                    <td>
-                                                        <div>
-                                                            <img src="assets/images/user-5.jpg" alt="" class="thumb-md rounded-circle mr-2"> Jassa
-                                                        </div>
-                                                    </td>
-                                                    <td>Ludhiana</td>
-                                                    <td>18/1/2021</td>
-
-                                                    <td>
-                                                        <div>
-                                                            <a href="#" class="btn btn-primary btn-sm">Edit</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jassa</td>
-                                                    <td><span class="badge badge-success">Delivered</span></td>
-                                                    <td>$7,250,000</td>
-                                                    <td>
-                                                        <div>
-                                                            <img src="assets/images/user-6.jpg" alt="" class="thumb-md rounded-circle mr-2"> Jassa
-                                                        </div>
-                                                    </td>
-                                                    <td>Ludhiana</td>
-                                                    <td>19/1/2021</td>
-
-                                                    <td>
-                                                        <div>
-                                                            <a href="#" class="btn btn-primary btn-sm">Edit</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <div>
+                                    <label for="floatingInput">{{ __('Csapatnév') }}</label>
+                                                <select name="name" class="form-control">
+                                                <option>Válaszd ki a csapatot!</option>
+                                                @foreach($team as $t)
+                                                    <option value="{{($t->name)}}"> {{($t->name)}}</option>
+                                                @endforeach
+                                            </select>
                                     </div>
 
+                                    <div class="d-grid">
+                                        <button class="btn btn-primary btn-large" type="submit">
+                                            {{__('Kiválaszt')}}
+                                        </button>
+                                </div>
+                                </div>
+                                <div class="card-footer">
+                                    
                                 </div>
                             </div>
-                        </div>
+                        </form>
+                        
+                        
+                        <div class="form-group" style="{{ $showDiv ? 'visibility: visible;' : 'visibility: hidden;' }}" id="hideDiv">
+                                                    <form action="{{ route('rating') }}" method="POST">
+                                                    @csrf
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <div>
+                                                            <label for="floatingInput">{{ __('Értékelni kivánt személy') }}</label>
+                                                                        <select name="ratee_name" class="form-control">
+                                                                        <option>Válaszd ki az értékelni kivánt személyt!</option>
+                                                                        @foreach ($teamMember->pluck('user_id')->unique() as $userId)
+                                                                            @if ($teamMember->where('user_id', $userId)->first()->team_id == $selectedTeamId)
+                                                                                <option value="{{ $userId }}">{{ $userId }}</option>
+                                                                            @endif
+                                                                        @endforeach
+                                                                    </select>
+                                                            </div>
+                                                            <div>
+                                                            <label for="floatingInput">{{ __('Értékelés') }}</label>
+                                                                        <select name="score" class="form-control">
+                                                                        <option>Válaszd ki az eredményt!</option>
+                                                                        @for($i = 1; $i <= 10; $i++)
+                                                                            <option value="{{ $i }}">{{ $i }}</option>
+                                                                        @endfor
+                                                                        </select>
 
-                    </div>
-                    <!-- END ROW -->
-
+                                                                    </select>
+                                                            </div>
+                                                            <div class="form-floating">
+                                                                <label for="floatingInput">{{ __('Ok') }}</label>
+                                                                <input type="text" class="form-control {{ $errors->has('reason') ? 'is-invalid' : ''}}" placeholder="Description" name='reason'>
+                                                                
+                                                                <p class="invalid-feedback">
+                                                                    {{$errors->first('reason')}}
+                                                                </p>
+                                                            </div>
+                                                            <div>
+                                                            <div class="d-grid">
+                                                                <button class="btn btn-primary btn-large" type="submit">
+                                                                    {{__('Értékelés')}}
+                                                                </button>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                            </form> 
+                                        </div> 
                 </div>
-                <!-- container-fluid -->
-
             </div>
-            <!-- content -->
 
 @endsection
+
+
 

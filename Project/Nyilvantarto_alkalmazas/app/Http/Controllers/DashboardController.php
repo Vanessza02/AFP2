@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Team;
 use App\Models\User;
+use App\Models\TeamMember;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -14,40 +15,36 @@ class DashboardController extends Controller
     {
         $dashboard = array('dashboard'=>'Diagram', 'profile'=>'Profil', 'groups'=>'Csapatok', 'ratings'=>'Értékelés', 'calendar'=>'Naptár', 'addMember' => 'Hozzáadás');
         $value = $dashboard[$string];
+        $userAvatar = Auth::user();
+        $user = User::all();
+        $user_id = auth()->id();
+        $team = Team::where('user_id', '=', $user_id)->get();
+        $showDiv = session('showDiv', false);
+        $selectedTeamId = session('selectedTeamId', 1);
 
         if($value == 'Diagram')
         {
-            $userAvatar = Auth::user();
-
             return view('Dashboard.dashboard', compact('userAvatar'));
         }
         elseif($value == 'Profil')
         {
-            $userAvatar = Auth::user();
-
             return view('Dashboard.leader_user', compact('userAvatar'));
         }
         elseif($value == 'Értékelés')
         {
-            $userAvatar = Auth::user();
-            return view('Dashboard.értesítések', compact('userAvatar'));
+            $teamMember = TeamMember::All();
+            return view('Dashboard.értesítések', compact('userAvatar', 'team', 'showDiv', 'teamMember', 'selectedTeamId'));
         }
         elseif($value == 'Naptár')
         {
-            $userAvatar = Auth::user();
             return view('Dashboard.naptás', compact('userAvatar'));
         }
         elseif($value == 'Csapatok')
         {
-            $userAvatar = Auth::user();
             return view('Dashboard.csapat', compact('userAvatar'));
         }
         elseif($value == 'Hozzáadás')
         {
-            $userAvatar = Auth::user();
-            $user = User::all();
-            $user_id = auth()->id();
-            $team = Team::where('user_id', '=', $user_id)->get();
             return view('Dashboard.Team.team', compact('team', 'user', 'userAvatar'));
         }
     }
