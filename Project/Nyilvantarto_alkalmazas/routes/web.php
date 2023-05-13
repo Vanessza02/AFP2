@@ -18,12 +18,15 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::middleware(['guest'])->group(function () {
 Route::get('/login', [Controllers\Auth\SessionController::class, 'index']);
 Route::post('/login', [Controllers\Auth\SessionController::class, 'store'])->name('login.user');
 
 Route::get('/register', [Controllers\Auth\RegisterController::class, 'index']);
 Route::post('/register', [Controllers\Auth\RegisterController::class, 'store'])->name('register.create');
+});
 
+Route::middleware(['auth'])->group(function () {
 Route::get('/logout', [Controllers\Auth\SessionController::class, 'destroy'])->name('logout');
 
 Route::get('/{theme}', [Controllers\DashboardController::class, 'show'])->name('topic.show')->middleware('auth');
@@ -33,4 +36,4 @@ Route::post('/addMember', [Controllers\TeamController::class, 'addMember'])->nam
 
 Route::post('/ratings', [Controllers\RatingController::class, 'rating'])->name('ratingChoice');
 Route::post('/ratingTheMember', [Controllers\RatingController::class, 'store'])->name('rating');
-
+});
