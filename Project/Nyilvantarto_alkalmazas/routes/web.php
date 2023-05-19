@@ -36,4 +36,9 @@ Route::post('/addMember', [Controllers\TeamController::class, 'addMember'])->nam
 
 Route::post('/ratings', [Controllers\RatingController::class, 'rating'])->name('ratingChoice');
 Route::post('/ratingTheMember', [Controllers\RatingController::class, 'store'])->name('rating');
+    
+Route::get('fullcalendar','FullCalendarController@index');
+Route::post('fullcalendar/create','FullCalendarController@create');
+Route::post('fullcalendar/update','FullCalendarController@update');
+Route::post('fullcalendar/delete','FullCalendarController@destroy');    
 });
