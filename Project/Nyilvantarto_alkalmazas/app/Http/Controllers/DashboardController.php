@@ -37,7 +37,7 @@ class DashboardController extends Controller
         }
         elseif($value == 'Naptár')
         {
-            return view('Dashboard.naptás', compact('userAvatar'));
+            return view('Dashboard.fullcalender', compact('userAvatar'));
         }
         elseif($value == 'Csapatok')
         {
